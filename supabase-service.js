@@ -135,7 +135,7 @@ const SupabaseService = {
       try {
         // Get the OAuth URL from Supabase
         supabaseClient.auth.signInWithOAuth({
-          provider: 'linkedin',
+          provider: 'linkedin_oidc',
           options: {
             redirectTo: `${window.location.origin}/linkedin-callback.html`,
             scopes: 'openid profile email'
